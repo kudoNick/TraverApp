@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SlideActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        app:dotsStrokeColor="@color/ColorDarkCornflowerBlue"
+        app:dotsColor="@color/ColorLapisLazuli"
+        android:id="@+id/worm_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsCornerRadius="@dimen/n8dp"
+        app:dotsSize="@dimen/n16dp"
+        app:dotsSpacing="@dimen/n4dp"
+        app:dotsStrokeWidth="@dimen/n2dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/n40dp"
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lineNext"
+        android:layout_marginRight="@dimen/n8dp"
+        android:layout_marginTop="@dimen/n8dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:background="@drawable/bg_blue_sea"
+        android:layout_width="@dimen/n30dp"
+        android:layout_height="@dimen/n30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:tint="#70F8EE"
+            android:src="@drawable/ic_next"
+            android:background="@drawable/bg_white"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/n25dp"
+            android:layout_height="@dimen/n25dp"/>
+    </LinearLayout>
+</FrameLayout>
